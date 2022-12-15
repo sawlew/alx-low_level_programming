@@ -6,6 +6,6 @@
  * int prototypes (int)
  */
 int _putchar(char);
-int _isupper(int);
+int _isupper(int c);
 
 #endif /* MAIN_H */
