@@ -2,6 +2,7 @@
 /**
  * print_times_table - prints the times table of the input number starting with 0.
  * @n: The input number.
+ * Return: nothing
  */
 void print_times_table(int n)
 {
