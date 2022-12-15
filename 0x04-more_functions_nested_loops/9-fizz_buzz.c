@@ -3,9 +3,9 @@
 
 /**
  * main - prints number 1 to 100
- * multiples of 3 prints 'Fizz'
- * multiples of 5 prints 'Buzz'
- * multiples of 3 and 5 prints 'FizzBuzz'
+ * 3 multiples prints 'Fizz'
+ * 5 multiples prints 'Buzz'
+ * 3 & 5 multiples prints 'FizzBuzz'
  * Return: Always 0
  */
 int main(void)
