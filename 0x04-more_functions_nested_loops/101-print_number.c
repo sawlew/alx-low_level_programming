@@ -3,6 +3,7 @@
 /**
  * print_number - prints a number
  * @n: the number to print
+ * 
  */
 void print_number(int n)
 {
