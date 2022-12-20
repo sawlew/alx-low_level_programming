@@ -25,8 +25,8 @@ int main(void)
 	if (sum != 2772)
 	{
 		a = (sum - 2772) / 2;
-		b = (sum - 2772) / 2
-		if ((sum - 2772) % 2 != 0
+		b = (sum - 2772) / 2;
+		if ((sum - 2772) % 2 != 0)
 			a++;
 
 			for (index = 0; pass[index]; index++)
@@ -39,7 +39,7 @@ int main(void)
 			}
 			for (index = 0; pass[index]; index++)
 			{
-				if (pass[index] >= (33 + b)
+				if (pass[index] >= (33 + b))
 				{
 					pass[index] -= b;
 					break;
