@@ -15,7 +15,7 @@ for (a = 0; a < n && *(src + a); a++)
 {
 *(dest + a) = *(src + a);
 }
-for (a < n; a++)
+for (; a < n; a++)
 {
 *(dest + a) = '\0';
 }
