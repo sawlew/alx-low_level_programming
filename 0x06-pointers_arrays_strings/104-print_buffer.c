@@ -9,21 +9,35 @@
  */
 void print_buffer(char *b, int size)
 {
-	int i;
+	int i, j, k;
 
-	for (i = 0; i <= (size - 1) / 10 && size; i++)
+	if (size <= 0)
+		printf("\n");
+	else
 	{
-		printf("%08x", i * 10);
-		if (i < size / 10)
+		for (i = 0; i < size; i += 10)
 		{
-			print_line(b, 9, i);
+			printf("%.8x:", i);
+			for (j = i; j < i + 10; j++)
+			{
+				if (j % 2 == 0)
+					printf(" ");
+				if (j < size)
+					printf("%.2x", *(b + j));
+				else
+					printf("  ");
+			}
+			printf(" ");
+			for (k = i; k < i + 10; k++)
+			{
+				if (k >= size)
+					break;
+				if (*(b + k) < 32 || *(b + k) > 126)
+					printf("%c", '.');
+				else
+					printf("%c", *(b + k));
+			}
+			printf("\n");
 		}
-		else
-		{
-			print_line(b, size % 10 - 1, i);
-		}
-		putchar('\n');
 	}
-	if (size == 0)
-		putchar('\n');
 }
