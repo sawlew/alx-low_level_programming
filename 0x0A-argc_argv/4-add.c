@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - adds positive numbers.
+ * main - add positive numbers.
  * @argc: argument count
  * @argv: arguments
- *
  * Return: 0
  */
 int main(int argc, char **argv)
