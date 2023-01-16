@@ -1,0 +1,1 @@
+This directory contains C files under the topics "Structures" and "typedef"
