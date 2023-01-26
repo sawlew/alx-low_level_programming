@@ -1,19 +1,14 @@
 #include<stdio.h>
 
-/**
- * myStartupFun - Apply the constructor attribute to myStartupFun() so that it
- *   is executed before main()
- */
-
 void myStartupFun(void) __attribute__ ((constructor));
 
 /**
- * myStartupFun - implementation of myStartupFun
+ * myStartupFun - prints before main
+ * Return: nothing
  */
 
 void myStartupFun(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
-	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
 }
